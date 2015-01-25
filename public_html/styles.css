@@ -1,0 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Clicker+Script);
+/*Eddie Kim is a wizard*/
+
+* {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  background-color: #F0F8FF;
+}
+
+#page_wrap {
+  margin: 50px auto;
+  width: 600px;
+}
+
+#top_wrap {
+  float: left;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#top {
+  font-family: 'Clicker Script', cursive;
+  text-align: left;
+  font-weight: normal;
+  font-size: 50px;
+  color: #2F4F4F;
+  width: 50%;
+  float: left;
+  margin: 10px 0 0 0;
+}
+
+#nav_bar {
+  font-size: 14px;
+  float: right;
+  width: 40%;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+#nav_bar a:link, a:visited {
+  width: 120px;
+  color: #778899;
+  text-align: left;
+  padding: 8px;
+  text-decoration: none;
+}
+
+#nav_bar a:hover, a:active {
+  color: #4B0082;
+}
+
+.nav_box {
+  float: right;
+  margin-top: 30px;
+}
+
+#content {
+  float: left;
+  margin: 0 5%;
+  padding: 30px;
+  color: #696969;
+  font-size: 13px;
+  border-top: 1px solid #FFA500;
+}

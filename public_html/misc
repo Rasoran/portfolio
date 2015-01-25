@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Nicholas Sun</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!--
+    
+    <link rel="stylesheet" type="text/css" href="/static/mysite/layout.css">
+    -->
+  </head>
+  <body>
+    <div id="page_wrap">
+      <div id="top_wrap">
+        <h1 id="top">Misc</h1>
+
+        <ul id="nav_bar">
+          <!-- <li class="nav_box"><a href="/about_you">about you</a></li> -->
+          <li class="nav_box"><a href="/about">about</a></li>
+          <li class="nav_box"><a href="/misc">misc</a></li>
+          <li class="nav_box"><a href="https://github.com/Rasoran">github</a></li>
+          <li class="nav_box"><a href="/">home</a></li>
+        </ul>
+      </div>
+
+      <div id="content">
+        
+<p>"nichOlas Sun" wasn't a typo. Some people just call me Olas.</p>
+
+<p>Books by Kurt Vonnegut will teach you about how not to live life. Read Orson Scott Card for some great adventures with precocious, misunderstood children. Terry Pratchett for a satire of the world (definitely recommended for Douglas Adams fans). And Eugene Ionesco for some weird stuff (but it's good, I promise).</p>
+
+<p><a href="http://www.catb.org/esr/writings/unix-koans/index.html">Rootless Root</a> The teachings of Master Foo.</p>
+
+      </div>
+
+      <!-- some kind of footer -->
+    </div>
+  </body>
+</html>

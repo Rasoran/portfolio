@@ -1,0 +1,466 @@
+#
+# A Trip to the Library was never this involved!
+#
+
+
+
+**********************************************
+******************* Part 1 *******************
+**********************************************
+
+
+###########################
+### Lets Play Some MKV! ###
+###########################
+
+First of all, to play .mkv files, you want some 'Mplayer'
+derivative video player. I only took a quick look around,
+but it definitely seems like 'MplayerX' takes the cake for
+best on osx. And mplayer doesn't only play .mkv, it's loved
+for it's ability to play virtually any media file!
+
+* MplayerX, all video formats, very happy
+
+
+#################################
+### Some Tools to get Started ###
+#################################
+
+You're gonna wanna have something to edit files with. I'm
+not talking about MSOffice or LibreOffice because those are
+'word processors,' something at once too much and too little
+to deal with the type of editing you're gonna have to take
+on later in this guide.
+
+A nice text editor to get you started is 'Sublime Text.'
+Try opening this file up in 'Sublime Text!'
+It is indeed quite sublime; real simple to use and quite
+easy on the eyes. If you ever feel like learning the hard
+stuff, then checkout 'vim' but you won't ever _have_ to learn
+it, it's just cool to know.
+
+Also you probably saw me pop up a program called the 'terminal'
+It's actually just a different way of interacting with your
+computer, you'll see some uses to it later.
+
+* Sublime Text, is a sublime text editor
+* Terminal, friend or foe?
+** vim, cool and fun but haaard
+
+
+#########################
+### Pssst! Over Here! ###
+#########################
+
+Theres actually alot more files there than you can see.
+These files are invisible, for example if you made a file
+called '.bizboe' then if you checked in your file system
+it's won't there! What?! This happens when files begin with
+a '.' a period. A dot. These are usually called 'dot files'
+or more straightforwardly 'hidden files.' Theres probably
+some option in the file explorer to show hidden files and
+wow are there alot!. Actually if you pop up the 'terminal'
+application, then you can detect these behind-the-scene
+dudes with a cool 'ls -a'
+
+* .bizboe is trying to sneak away with diamond and gold
+
+
+
+###########################
+### Huh? What was that? ###
+###########################
+
+I snuck in a reference to the terminal there, but don't worry.
+See normally you communicate with your computer by clicking
+and dragging with your mouse with some occasional keypresses,
+but when you wanna chat with your computer through the
+'terminal' it's all through typing. Whenever I'm referring to
+something that should be typed in the terminal I'll start it
+off with a '$' and on another note, all '#' are comments,
+just some idle chatter that doesn't go in the terminal.
+
+    # Recognize this guy?
+    $ ls -a
+    # You don't need to type the space between '$' and 'ls'
+
+'ls' is actually an all-purpose command to listing all the
+files in your current directory! We call folders 'directories'
+in this business by the way. Anyways, try out that ls by itself!
+
+    $ ls
+
+You can think of the '-a' as a 'flag' that tells the terminal
+to 'list all' instead of to just 'list'
+
+You can also 'Change Directory' with a slick 'cd' by doing
+'cd [DIRECTORY]' and you can always get back to where you
+started with a 'cd' without any directory!
+
+    $ cd Documents
+    # Go to 'Documents' directory if you have one
+    $ cd ..
+    # And we're back!
+
+* 'ls' '-a' and 'cd' oh my!
+
+
+###########################
+### The Journey Begins! ###
+###########################
+
+Ok, ok. What was that about current directory? Where am I?
+    : Oho, Welcome Explorer, to the TeRminAl!
+    > Um. hey. can we just move on-
+    : Welcome! Text Interfaces are c00l! Ho HO HOO
+    > Ok thats great, so where-
+    : We are In your HOME!
+    > Wuh? I'm being serious-
+    : Isn't it Quite Nice? there's no where quite like HOME!
+    : Ahem.
+    : This is your HOME directory! known by many names amoung
+    : which are '~' and '/home/$USER' By the Way $USER is a
+    : variable that the Terminal will see as your Username!
+    : like Magic!
+
+! Fact: the terminal communicates with you through a type
+of language called 'Shell.' That's right, it's a real kind
+of programming language! The shell language that you are
+using by default is probably called 'Bash'
+
+    New tool!   'echo' will always tell you what the terminal
+                sees. Confusing? I think not!
+
+    Quest unlocked! Try these commands out!
+
+    $ echo "Huhuuu! I just hackers your termeenoool!"
+    # Go away bizboe.
+
+    $ echo $USER
+    $ echo ~
+    $ echo /home/$USER
+    # You can copy and paste intead of typing too
+
+    $ echo $HOME
+    # Wait so there was a reason for the all-caps HOME?
+
+    $ cd ..
+    # '..' is always the directory up
+    # If you call it from inside '/home/bizboe' it will
+    # bring you to '/home'!
+    # and '.' is always the current directory
+
+    $ cd
+    # 'cd' by itself will always bring you home!
+
+* I say 'echo' you say 'echo'
+* '$USER' '$HOME' such magic
+
+
+#########################################
+### WAIT. What happened to the Libra- ###
+#########################################
+
+    : SILENCE YOUNG WHIPPERSNAPPER
+    : YOU DON't NEED NO-
+    ~ Ahhh, A nice quick stab to the heart.
+    > ...
+    ~ Hello, how are you? Ready or not let's get started!
+
+So this library is pretty far away. In fact it's in Berkeley,
+at Olas' house! How are we gonna get there? Walk? Nope, through
+the power of 'ssh!' The library is actually linked to Olas' domain
+which he called 'raspi.nlsun.com' Now if you visit this in a web
+browser you won't see anything since it's not a website, but 'ssh'
+doesn't talk to websites, it has it's own entrance to get in from.
+
+    # What is this nonsense?
+    $ ssh guest@raspi.nlsun.com
+    # Woah what just happened?!
+
+Connection refused? We'll get to that soon.
+
+    ~ Hello there!
+    ~ Now the command you see here can be broken into several
+    ~ parts.
+    ~ 'ssh' is the command that is doing all the heavy lifting
+    ~ and getting you all the way to Olas' Library
+    ~ 'guest' is where you put the username, if you ask Olas
+    ~ he can create more users and you can use those as well!
+    ~ '@' is alway there to separate the 'user' name and the
+    ~ 'domain' name...and last is...the domain...name...
+
+    > ...ZZzzz...
+    ~ Hmmm... I did need some more stabbing practice today...
+    > !!! ASDFLKAJSK;ljadf !!! Awake and Alert!
+
+* ssh [USERNAME]@[DOMAIN]
+
+
+####################
+### Lock and Key ###
+####################
+
+So you probably noticed that nothing really happened when you
+tried that command earlier, that's because I gotta keep my server
+secure. now make a '.ssh' folder with the 'mkdir' command. Can
+you guess how 'mkdir' or 'Make DIRectory' works? By the way,
+dotfiles are usually used to configure certain programs and the
+'.ssh' unsurprisingly sets configurations for the 'ssh' command!
+
+    # Make .ssh directory if you don't have one already
+    # Remember how to check for hidden files (or directories)?
+    # : HinT it's 'LiSt -All'; HAHAHU GET ITTTTTTTT-
+    # *stab*
+    # ~ Why is it still alive?
+    $ mkdir .ssh
+
+    ~ Now in order for you get get access to the server you need
+    ~ to create a key for yourself, and let Olas verify it as a
+    ~ trusted key, upon which you can begin using it! This will
+    ~ require a new command 'ssh-keygen'
+
+    # '-t rsa' will tell 'ssh-keygen' that you wan't to make
+    # a key that is of Type, RSA
+    # RSA is a kind of encryption, cool!
+    # '-b 2048' tells it to use 2048 Bits in your key
+    # That's alot by the way
+    $ ssh-keygen -t rsa -b 2048
+
+    ~ Pay Attention!
+    ~ It's gonna ask you for a file to save the
+    ~ key in and that's gotta be fully typed out!
+    ~ You can't be fancy and type '~/.ssh/olas_library.key'
+    ~ you gotta type something like
+    ~ '/home/nicholas/.ssh/libolas.key'
+    ~ As you can see, you can name the key whatever you wish!
+    > It's like...Freedom! America!
+    ~ Well, just make sure it goes in that '.ssh' directory!
+
+    ~ Ok, next you're gonna want a password. You have the option
+    ~ to give no password but if do you MIGHT end up like bizboe.
+    : HUUU Me?! NO PASSWORD IS LIKE NO CLOTHES! WHEEEEEEE
+    > Ew.
+
+You're gonna see this alot, but when you type passwords you
+won't see anything that indicates you're typing. It's a
+security thing and you're just gonna have to get used to it.
+
+    ~ So now you got your Key, but how will you use it? and
+    ~ how will Olas verify it?
+    ~ if you navigate to your '.ssh' directory then you will
+    ~ see two files-
+    : IT WILL BE CALLED bizboe.key AND bizboe.key.pub
+    ~ Yes and no, it will have one file with .pub at the end
+    ~ but it won't be called bizboe unless you named it that.
+    > Gotcha, so i just give them to Olas or something?
+    : NEEEEEEEEEEEEVER Show the one withOUT the .pub
+    ~ I agree, '.pub' stands for public, you can give it out
+    ~ without fear, but the other one must never see the
+    ~ light of day...or you may never again see the light
+    ~ of day...
+
+Yeah so now you just need to get the contents of the .pub file
+to me and I'll add it to my authenticated users list. Once I do,
+you'll be able to take your first step into the library!
+
+* ~/.ssh holds your key! Remember to only share that .pub!
+
+
+
+**********************************************
+******************* Part 2 *******************
+**********************************************
+
+
+
+######################
+### Welcome Aboard ###
+######################
+
+Now that you've got that key verified it's time to take
+your first step in!
+
+    $ ssh -i ~/.ssh/bizboe.key guest@raspi.nlsun.com
+
+Man those are alot of commands! Let's try to break it down
+a bit.
+
+    : SSH will get us a Terminal to work with on the Server!
+    ~ '-i' is a new flag, it tells 'ssh' to use the following
+    ~ argument as the 'identity file,' or in this case, our
+    ~ key!
+    : HohU! That's right! the bizboe key! The key to the
+    : bizboe way of life!
+    > Hey that last one seems familiar too, our login stuff
+    > right?
+    ~ Correct. The username and domain name that we attempted
+    ~ to use with our previous ssh command, except now we
+    ~ have a nice key to use with it.
+
+    > ...
+    > Hmmm. This is nice and all but isn't this kinda annoying
+    > to type all the time?
+
+Well it just so happens that you can store all of this in a
+configuration file. Fire up your new and shiny text editor
+and create a file inside your .ssh directory called 'config'
+
+    # Did you create the file?
+    $ ls ~/.ssh
+    # You should see your new file 'config' now!
+
+Lets add some stuff so we don't need to type so much
+
+    : Chin up KIdd0, you got some Work ahead of you!
+    ~ Well, more like just stick the upcoming text in your
+    ~ 'config' file
+
+#
+# ~/.ssh/config
+#
+
+Host BizB0e
+    HostName raspi.nlsun.com
+    User guest
+    IdentityFile ~/.ssh/bizboe.key
+
+# End of file, don't type this line
+
+So what was that? Well notice that the-
+
+    : HostName is the DOMAIN NAME EARLIER and User
+    : WAs the username earlieR! and Id-
+    > Yeah, yeah and the IdentityFile is the '-i'
+    > from earlier.
+    ~ That's right. And this uh. BizB0e. is what you
+    ~ pass to the ssh command...Although you probably
+    ~ want to make it something more pleasant to type
+
+    # This is all it is!
+    $ ssh BizB0e
+    # : UH I actually prefer WORld since the more
+    # : I use 'ssh WORld' the more it becomes mine!!!
+    # ~ ...Maybe I mistakened your brain for your
+    # ~ heart...
+
+Ah, were you still stuck in the ssh? You can press
+ctrl+d or command+d to close it. Or even
+
+    $ quit
+    # But this is more work than one of the previous two
+
+* ssh config makes things easy!
+* ctrl+d or command+d to exit ssh!
+
+
+################################
+### But Where are the Files? ###
+################################
+
+I was just getting to that. Once you're in (through
+'ssh'!) you can just navigate to (remember 'cd'?)
+'/media/USBHDD'
+
+    # Are you in ssh to raspi.nlsun.com?
+    $ cd /media/USBHDD
+    $ ls
+    # Wow!
+
+    : HEY THIS IS NOT DIAMOND AND GOLD
+    ~ No one ever said it was. This is
+    ~ a library.
+    : POOOOOOOOOOO. POOOOOOOOOOOOOOOOOO
+    > Well at least I see what I came for.
+
+* /media/USBHDD is where it's at!
+
+
+##############################
+### Who let the dogs out?! ###
+##############################
+
+Now it's time to download! We have two options,
+'scp' and 'sftp'
+Lets go with 'scp' first.
+
+    ~ scp is always run on your personal computer,
+    ~ or the computer that holds the ssh key!
+    ~ scp actually uses the same configurations as
+    ~ ssh.
+
+    !Fact!  'ssh,' 'scp,' and 'sftp' are all in the
+            same family! They all use the same configs
+            and everything!
+
+(I'll probably shorten 'directory' to 'dir' and stuff
+like that so yeah)
+
+Let's see how it generally looks:
+
+    # Remember to run this on your personal computer!
+    $ scp HOSTNAME:FILEPATH MYDIR
+
+    > Err...so HOSTNAME is probably what we used with
+    > ssh before so-
+    : BizB0e!
+    > Um yeah. And there's a colon there too, is it
+    > necessary?
+    ~ Definitely, and as a side note, everything is
+    ~ case sensitive!
+    > Alright. And MYDIR is?
+    : IT'S WHERE YOU KEEP DIAMOND AND GOLD
+    ~ Or in other words, the directory on your
+    ~ personal computer where you want to store
+    ~ the file you're copying.
+
+What if you wan't more than one file though? What if
+you want the whole directory?! Well you are gonna
+have to give 'scp' a '-r' to tell it to 'recursively'
+grab an entire directory!
+
+    # Stick that entire directory into MYDIR!
+    $ scp -r HOSTNAME:DIRPATH MYDIR
+
+* scp copies the file. Simple.
+
+
+#############################
+### But Wait! There's More! ###
+#############################
+
+What could sftp possible be then? Well lets check
+it out.
+
+    $ sftp BizB0e
+
+    > It's almost like ssh...but different?
+    ~ This time around we're gonna need to use
+    ~ some commands that are specific to sftp only
+
+    Take Note!  If you haven't already figured it out,
+                you can press the up arrow to pull back
+                a command you typed earlier! Check it out!
+
+And now for the specialized sftp commands
+
+    # Make sure you're in sftp!
+    $ get LIBRARYPATH MYPATH
+    # PATH refers to the chain of directories until your
+    # destination
+    # : Like the PATH to your HOME. GET IT??!?
+    # And LIBRARYPATH is the path to the file you want
+    # from the library. Simple eh?
+
+    ~ Take note that you won't be able to use any magic
+    ~ when typing out the MYPATH. So no ~/ or $HOME
+    ~ you gotta type out that long /home/bizboe
+
+The cool part about this one is that you can 'get'
+multiple files without having to retype your password!
+You can even pass in a '-r' to 'get' a directory
+'recursively' as before!
+
+    $ get -r LIBRARYPATH MYPATH
+
+* sftp means you can get get get and get!
