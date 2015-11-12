@@ -19,7 +19,7 @@
           <!-- <li class="nav_box"><a href="/about_you">about you</a></li> -->
           <li class="nav_box"><a href="/about">about</a></li>
           <li class="nav_box"><a href="/misc">misc</a></li>
-          <li class="nav_box"><a href="https://github.com/Rasoran">github</a></li>
+          <li class="nav_box"><a href="https://github.com/nlsun">github</a></li>
           <li class="nav_box"><a href="/">home</a></li>
         </ul>
       </div>
@@ -31,7 +31,12 @@
 <p>Books by Kurt Vonnegut will teach you about how not to live life. Read Orson Scott Card for some great adventures with precocious, misunderstood children. Terry Pratchett for a satire of the world (definitely recommended for Douglas Adams fans). And Eugene Ionesco for some weird stuff (but it's good, I promise).</p>
 
 <p><a href="http://www.catb.org/esr/writings/unix-koans/index.html">Rootless Root</a> The teachings of Master Foo.</p>
-<p>Plex: plex (dot) nlsun (dot) com PORT 32400 (slash) web</p>
+<p>Plex: plex (dot) tv (slash) web<p>
+<pre>
+	Plex does this cool thing where it has a wildcard cert to cover
+	all plex users. HTTPS for everyone! This only redirects you if
+	I have you registered as a shared user.
+</pre>
 <p>MPD: fosski (dot) nlsun (dot) com PORT 25588</p>
 
       </div>

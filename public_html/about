@@ -19,17 +19,17 @@
           <!-- <li class="nav_box"><a href="/about_you">about you</a></li> -->
           <li class="nav_box"><a href="/about">about</a></li>
           <li class="nav_box"><a href="/misc">misc</a></li>
-          <li class="nav_box"><a href="https://github.com/Rasoran">github</a></li>
+          <li class="nav_box"><a href="https://github.com/nlsun">github</a></li>
           <li class="nav_box"><a href="/">home</a></li>
         </ul>
       </div>
 
       <div id="content">
         
-<p>I am currently studying my third year at the University of California Berkeley as an Electrical Engineering and Computer Science major.</p>
-<p>In short, I'm an EECS major at UC Berkeley who enjoys tinkering with things.</p>
-<p>Arch Linux and i3 are beautiful together (and consequently are what I'm running).</p>
-<p>Xmonad is wonderful but just about every reason as to why I'm now using i3 can be summed up to some form of "i3 has better native support." The tree-like "container" structure that i3 is built around is also quite powerful.</p>
+<p>I am currently studying my fourth year at the University of California Berkeley as an Electrical Engineering and Computer Science major.</p>
+<p>In short, I'm an EECS major at UC Berkeley.</p>
+<p>Arch Linux and i3 are beautiful together but I'm currently seeing what Gnome 3.18 has to offer.</p>
+<p>Xmonad is wonderful but just about every reason as to why i3 is superior can be summed up to some form of "i3 has better native support." The tree-like "container" structure that i3 is built around is also quite powerful.</p>
 <p>You may be interested in my resume as a <a href="files/Resume.pdf">PDF</a>, or perhaps a <a href="files/Resume.docx">Word Doc</a>.</p>
 
       </div>
